@@ -5,8 +5,7 @@ import java.util.*;
 public class main {
     public static void main(String[] args) {
         // Example input
-        String[] towelPatterns; // = {"r", "wr", "b", "g", "bwu", "rb", "gb", "br"};
-        //String[] desiredDesigns; // = {"brwrr", "bggr", "gbbr", "rrbgbr", "ubwu", "bwurrg", "brgr", "bbrgwb"};
+        String[] towelPatterns; 
         ArrayList<String> desiredDesignArrayList = new ArrayList<>();
  
         System.out.println("Advent of Code Day 19\n\r");
@@ -48,7 +47,7 @@ public class main {
         for (String design : desiredDesigns) {
             long ways = countWaysToFormDesign(towelPatterns, design);
             System.out.println("Number of ways to form design " + design + ": " + ways);
-            if (ways > 0) total += ways;
+            total += ways;
         }
         System.out.println("\n\rNumber of ways to form all designs " + total);
     }
